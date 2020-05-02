@@ -1,0 +1,49 @@
+<!-- ./views/index.handlebars -->
+<div class="container mt-5">
+  {{#each numbers}}
+  <span>---</span>
+  <div class="d-inline-flex align-items-center justify-content-center bg-info text-white rounded-circle my-4"
+    style="width: 30px; height: 30px;">
+    {{this}}
+  </div>
+  <span>---</span>
+  {{/each}}
+
+  <!-- search bar -->
+  <div class="row" id="search-bar">
+    <div class="col-12">
+      <form action="/search">
+        <div class="input-group mb-3">
+          <input type="text" name="keyword" class="form-control"
+            placeholder="Enter restaurant name or category to search..." value="{{keyword}}"
+            aria-label="restaurant Name..." aria-describedby="search-button">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit" id="search-button">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- restaurant list -->
+  <div class="row" id="data-panel">
+    {{#each restaurants}}
+    <div class="col-sm-3">
+      <a href="/restaurants/{{this.id}}" class="text-secondary">
+        <div class="card mb-2">
+          <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+          <div class="card-body restaurant-item-body">
+            <h6 class="card-title">{{this.name}}</h6>
+            <div class="restaurant-category mb-1">
+              <i class="fas fa-utensils pr-2"></i>{{this.category}}
+              <span class="badge badge-pill badge-danger font-weight-normal">{{this.rating}}
+                <i class="fas fa-star fa-xs"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+</div>
