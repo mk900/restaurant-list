@@ -2,7 +2,7 @@
 
 你的餐廳清單
 
-![screenshot ](https://github.com/mk900/restaurant-list/blob/master/landing_page.png)
+![screenshot](https://github.com/mk900/restaurant-list/blob/master/landing_page.PNG)
 
 ## Feature 功能表
 
