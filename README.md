@@ -1,13 +1,74 @@
-# restaurant-list
-S3-A1 project
-美食網
-一個使用 Node.js + Express 打造的餐廳美食網站
-功能
+# Project Title 專案名
 
-    1. 瀏覽多種餐廳
-    2. 搜尋餐廳名稱
-環境
+你的餐廳清單
 
-    Node.js: v12.16.0
-    Express: v4.17.1
-    Express-Handlebars: v4.0.4
+![screenshot ](https://github.com/mk900/restaurant-list/blob/master/landing_page.png)
+
+## Feature 功能表
+
+- 使用者可以在首頁看到所有餐廳與它們的簡單資料：
+  - 餐廳照片
+  - 餐廳名稱
+  - 餐廳分類
+  - 餐廳評分
+
+- 使用者可以再點進去看餐廳的詳細資訊：
+  - 類別
+  - 地址
+  - 電話
+  - 描述
+  - 圖片
+  
+-使用者可以透過搜尋餐廳名稱來找到特定的餐廳
+
+## Getting Started 如何開始
+
+這裡的說明將引導你如何取得專案的副本及如何建立你的本機環境。 如果你想開發或測試， 請參考下列章節。
+
+* Installing
+* Deployment
+
+### Prerequisites 環境需求
+
+需要安裝的軟體與套件
+
+- [Node.js]
+- [express]
+- [express-handlebars]
+- [body-parser]
+- [express-session]
+
+### Installing 安裝與使用
+
+透過 `git clone` 指令將專案下載下來到本機端
+
+開啟終端機 (Terminal)，進入資料夾內
+
+執行 `npm install`，將專案所需套件下載下來
+
+套件安裝完畢後，用專案所設定的統一指令 `npm run dev`，即可執行專案
+
+預設 port 為 3000，請直接打開瀏覽器，並在 URL 輸入 http://localhost:3000/ 即可瀏覽網頁
+
+
+## Deployment 開發
+
+No additional notes about how to deploy this on a live system
+
+## Authors
+
+* **Mike Kuo** - [Github Profile](https://github.com/mk900)
+
+## Contributors
+...
+
+## Versioning
+
+V. 1.0.0
+
+## License
+...
+
+## Acknowledgments
+...
+
